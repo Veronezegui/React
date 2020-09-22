@@ -16,10 +16,10 @@ const Livro1: React.FC = () => {
         <Card>
           <img src={book} alt="tully" />
           <div>
-            <p>Name: A Game of Thrones</p>
+            <p>Nome: A Game of Thrones</p>
             <p>Isbn: 978-0553103540</p>
-            <p>Authors: George R. R. Martin</p>
-            <p>NumberOfPages: 694</p>
+            <p>Autores: George R. R. Martin</p>
+            <p>Número de páginas: 694</p>
           </div>
         </Card>
       </Menu>

@@ -25,8 +25,9 @@ export const Main = styled.div`
   }
 `;
 export const Header = styled.div`
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  display: static;
+  min-width: 100vw;
   background: linear-gradient(
     -45deg,
     rgb(240, 248, 255),
@@ -50,49 +51,53 @@ export const Header = styled.div`
   background-origin: initial;
   background-clip: initial;
   background-color: initial;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   img {
     width: 100%;
     height: 500px;
   }
+  h1 {
+    color: white;
+    position: absolute;
+  }
   a {
     color: white;
     text-decoration: none;
-    margin-left: -1800px;
+    margin-left: -90vw;
   }
-  h1 {
-    text-align: center;
-    position: absolute;
+  @media (max-width: 600px) {
+    
   }
 
-  @media (max-width: 600px) {
+  @media (max-width:800px) {
     a {
-      margin-left: -300px;
+      color: white;
+      text-decoration: none;
+      margin-left: -90vw;
     }
   }
 `;
 
 export const Menu = styled.div`
-  width: 100%;
-  min-height: 500px;
-  display: flex;
+  min-width: 293px;
+  min-height: 307px;
+  display: ruby-base-container;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-top: 100px auto;
   padding: 50px;
 
   img {
-    margin: 5px auto;
     border-radius: 9px;
-    max-width: 293px;
-    min-height: 307px;
+    width: 300px;
+    height: 30vh;
   }
-`;
 
+`;
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
@@ -100,7 +105,6 @@ export const Card = styled.div`
   justify-content: center;
   min-height: 350px;
   width: 293px;
-  margin: 20px auto;
 
   a {
     margin-top: 5px;
@@ -113,14 +117,24 @@ export const Card = styled.div`
   a:hover {
     transform: scale(1.1);
   }
+
   @media (max-width: 600px) {
     align-items: center;
-    margin-left: -10px;
-    margin-bottom: 40px;
+    margin-bottom: 40px auto;
+    min-width:300px;
+    width:400px;
+    max-width:400px;
+    
+    padding:0px;
     img {
-      width: 200px;
+      min-width:200px;
+      width: 40%;
+      max-width:300px;
+      margin-left:10vw;
+      margin-right:10vw;
     }
   }
+
 `;
 
 export const Footer = styled.div`

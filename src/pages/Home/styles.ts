@@ -54,9 +54,32 @@ export const Header = styled.div`
     height: 500px;
     border-radius: 9px;
   }
+  @media(max-width:300px) {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: 100%;
+      height: 50vh;
+    }
+    section {
+      img {
+        width: 50vw;
+        height: 5vh;
+        margin-top: 6vh;
+      }
+      h3 {
+        font-size: 4vw;
+      }
+    }
+  } 
+  }
 
   @media (max-width: 600px) {
-    margin-top: 100px;
+    margin-top: 35vh;
     width: 360px;
     height: 30vh;
     display: flex;
@@ -64,7 +87,7 @@ export const Header = styled.div`
     justify-content: center;
     flex-direction: column;
     img {
-      width: 100vw;
+      width: 100VW;
       height: 50vh;
     }
     section {
@@ -141,9 +164,10 @@ export const Menu = styled.div`
       filter: blur(5px);
     }
   }
-  @media (max-width: 600px) {
+  @media(max-width: 300px) {
     section {
       margin-top: 5vh;
+      width: 100vw;
       bottom: -320px;
       img {
         width: 190px;
@@ -165,6 +189,44 @@ export const Menu = styled.div`
     }
     flex-direction: column;
     width: 10vh;
+  }
+  }
+  @media (max-width: 600px) {
+    section {
+      img {
+        width: 190px;
+        height: 10vh;
+        margin-bottom: 10vh;
+      }
+      .P1 {
+        font-size: 20px;
+        left: 85px;
+      }
+      .P2 {
+        font-size: 20px;
+        left: 120px;
+      }
+      .P3 {
+        font-size: 20px;
+        left: 120px;
+      }
+    }
+    flex-direction: column;
+    width: 10vh;
+  }
+
+  @media(max-width:800px) {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 40vh;
+    section {
+      margin-top: 5vh;
+      img {
+        width: 190px;
+        height: 10vh;
+        margin-bottom: 10vh;
+      }
+    }
   }
 `;
 
@@ -207,5 +269,9 @@ export const Footer = styled.div`
   @media (max-width: 600px) {
     visibility: hidden;
     width: 100vw;
+  }
+
+  @media(max-width:800px) {
+    visibility: hidden;
   }
 `;

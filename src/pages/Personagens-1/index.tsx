@@ -17,13 +17,13 @@ const Jon: React.FC = () => {
         <Card>
           <img src={jon} alt="jon" />
           <div>
-            <p>Name: Jon Snow</p>
-            <p>Gender: Male</p>
-            <p>Culture: Northmen</p>
-            <p>Born: In 283 AC</p>
-            <p>Titles: Lord Commander of the Nights Watch</p>
+            <p>Nome: Jon Snow</p>
+            <p>Gênero: Male</p>
+            <p>Cultura: Northmen</p>
+            <p>Nasceu em: In 283 AC</p>
+            <p>Títulos: Lord Commander of the Nights Watch</p>
             <p>
-              Aliases: Lord Snow, Ned, Starks Bastard, The Snow of Winterfell.
+              Apelidos: Lord Snow, Ned, Starks Bastard, The Snow of Winterfell.
             </p>
           </div>
         </Card>

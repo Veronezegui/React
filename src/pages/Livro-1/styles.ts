@@ -30,6 +30,7 @@ export const Main = styled.div`
 `;
 export const Header = styled.div`
   width: 100%;
+  justify-content: space-around;
   background: linear-gradient(
     -45deg,
     rgb(240, 248, 255),
@@ -60,29 +61,25 @@ export const Header = styled.div`
   img {
     width: 360px;
     height: 500px;
+
   }
   h1 {
     color: white;
     position: absolute;
+    ,margin-left: 50vw;
   }
   a {
     color: white;
     text-decoration: none;
-    margin-left: -1800px;
+    margin-left: -90vw;
+    margin-right:0px
   }
 
-  @media (max-width: 600px) {
-    width: 365px;
-    justify-content: space-around;
-
+  @media (max-width: 600px) {¨
     h1 {
+      font-size: 5vw;
       color: white;
       position: absolute;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      margin-left: -300px;
     }
   }
 `;
@@ -91,31 +88,32 @@ export const Menu = styled.div`
   width: 100%;
   min-height: 500px;
   display: ruby-base-container;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 100px auto;
   padding: 50px;
 
   img {
     margin: 5px auto;
     border-radius: 9px;
     max-width: 293px;
-    min-height: 307px;
+    min-height: 307px
+    margin: auto;
   }
   @media (max-width: 600px) {
-    width: 100vw;
+    min-width: 400px;
   }
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-height: 350px;
   width: 600px;
-  margin: 5px auto;
+  margin: auto;
   text-align: left;
+  padding: 20px;
 
   a {
     margin-top: 5px;
@@ -132,11 +130,9 @@ export const Card = styled.div`
     padding: 40px;
     flex-direction: column;
     font-weight: bold;
-    margin-top: 10px;
-    margin-left: 105px;
-    margin-right: 0px;
+    margin: 10px auto;
     text-indent: 0px;
-    height: 50px;
+    height: auto;
     text-align: justify;
     background: #e5e5e5;
     border-radius: 9px;
@@ -146,7 +142,7 @@ export const Card = styled.div`
     left: 600px;
     width: 100%;
     height: 430px;
-    margin-right: 10px auto;
+    margin: auto;
   }
 
   @media (max-width: 600px) {
@@ -159,16 +155,15 @@ export const Card = styled.div`
       height: auto;
       margin: auto;
       position: static;
-      left: 50px;
     }
     p {
-      margin-left: 0px;
       padding: 20px;
       width: 60vw;
       height: auto;
       left: 40px;
     }
   }
+
 `;
 
 export const Footer = styled.div`

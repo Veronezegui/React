@@ -16,10 +16,10 @@ const Casa1: React.FC = () => {
         <Card>
           <img src={tully} alt="tully" />
           <div>
-            <p>Name: House Tully of Riverrun</p>
-            <p>Region: The Riverlands</p>
-            <p>Words: Family, Duty, Honor.</p>
-            <p>Titles: Lord of Riverrun, Lord Paramount of the Trident.</p>
+            <p>Nome: House Tully of Riverrun</p>
+            <p>Região: The Riverlands</p>
+            <p>Palavras: Family, Duty, Honor.</p>
+            <p>Títulos: Lord of Riverrun, Lord Paramount of the Trident.</p>
           </div>
         </Card>
       </Menu>
